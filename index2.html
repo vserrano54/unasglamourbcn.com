@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+
+<head>
+    <!-- AQUÍ VAN TODOS LOS METADATOS Y "LO QUE NO SE VE" DE LA WEB -->
+    <title>Cocinillas - Encuentra las mejores recetas</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Kenai Zurdo">
+    <meta name="description" content="Esta es una web para buscar recetas de cocina.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- LIBRERÍA DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ESTILOS PERSONALIZADOS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* ESTILOS PERSONALIZADOS PUNTUALES!!! OJO, MEJOR EN UN FICHERO APARTE. 
+        (A no ser que necesitemos que un estilo en concreto se cargue el primero, mucho más rápido)
+        */
+
+        /*.nav-item {
+            background-color: red;
+        }*/
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom px-5">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="logotipo" src="logotipo.png">
+            <span class="fs-4">Cocinillas.com</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link enlace active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link enlace">Buscar recetas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link enlace">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="#" class="nav-link enlace contacto">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- CONTENIDO DE LA WEB -->
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-body-tertiary fondo-main">
+            <div class="col-md-6 p-lg-5 mx-auto m-5">
+                <h1 id="tituloRecetasCocina" class="display-3 fw-bold">Las mejores recetas de cocina</h1>
+                <h3 class="fw-normal text-muted mb-3">con los ingredientes más básicos</h3>
+                <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                    <a href="#bloque-features" class="btn btn-primary btn-lg btn-verde">¡Quiero empezar!</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="bloque-features" class="px-5 mt-5">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 px-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <h2 class="fw-bold text-body-emphasis"><span id="palabraGrande"
+                            style="color: #d5935a; font-size: 42px;">Cocinar</span> nunca había sido tan sencillo</h2>
+                    <p class="text-body-secondary">
+                        Recetas de cocina y gastronomía. Las mejores recetas de cocinas, postres, vinos, turismo
+                        gastronómico, <a class="enlace-custom" href="google.com" target="_blank">turismo enológico</a>.
+                        ¡Todo con los
+                        ingredientes más básicos!
+                    </p>
+                    <p class="text-body-secondary">
+                        Las mejores recetas de cocinas, postres, vinos, turismo
+                        gastronómico, turismo enológico. Recetas de cocina y gastronomía.
+                    </p>
+                    <a href="#!" class="btn btn-lg btn-naranja">Quiero empezar a cocinar</a>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div class="d-inline-flex align-items-center justify-content-center foto-feature">
+                                <img src="ingredientes-cocina.png">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Busca ingredientes</h4>
+                            <p class="text-body-secondary">Utiliza el buscador para encontrar la receta perfecta con los
+                                ingredientes que tienes en tu frigorífico.
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div class="d-inline-flex align-items-center justify-content-center foto-feature">
+                                <img src="compartir-recetas.png">
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Comparte recetas</h4>
+                            <p class="text-body-secondary">¿Te ha gustado una receta? ¡Pues compártela con tus amigos y
+                                prepara un plato de rechupete!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 my-1 mt-4 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">Recetas destacadas</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Descubre las recetas más <strong>deliciosas</strong> de nuestra web.
+                    <br>
+                    Un <i>must</i> para los <u>amantes de la cocina</u>.
+                </p>
+            </div>
+        </div>
+
+        <div class="px-5">
+            <div id="contenedor-destacado" class="row px-5">
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-1.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Ensalada de lentejas con mango, piña, papaya y jamón</h5>
+                                    <p class="card-text">Esta ensalada multicolor no solo es llamativa y perfecta para
+                                        publicar en tu cuenta de Instagram, sino que también es rápida, deliciosa y de
+                                        lo más saludable.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-2.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Brochetas con calabacín y langostinos</h5>
+                                    <p class="card-text">A veces, un gesto tan sencillo como cambiar la presentación de
+                                        un plato, puede darle un giro radical a una receta.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-3.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Revuelto de ajos tiernos con champiñones</h5>
+                                    <p class="card-text">Los champiñones son un alimento muy socorrido que permite
+                                        preparar un sinfín de recetas. Además, no hace falta que sean frescos, en lata
+                                        también están buenísimos y te pueden salvar la comida o la cena.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-1.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Ensalada de lentejas con mango, piña, papaya y jamón</h5>
+                                    <p class="card-text">Esta ensalada multicolor no solo es llamativa y perfecta para
+                                        publicar en tu cuenta de Instagram, sino que también es rápida, deliciosa y de
+                                        lo más saludable.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-2.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Brochetas con calabacín y langostinos</h5>
+                                    <p class="card-text">A veces, un gesto tan sencillo como cambiar la presentación de
+                                        un plato, puede darle un giro radical a una receta.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="img-fluid contenedor-foto">
+                                    <img src="receta-3.jpg" class="rounded-start foto-card-receta">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-receta">
+                                    <h5 class="card-title">Revuelto de ajos tiernos con champiñones</h5>
+                                    <p class="card-text">Los champiñones son un alimento muy socorrido que permite
+                                        preparar un sinfín de recetas. Además, no hace falta que sean frescos, en lata
+                                        también están buenísimos y te pueden salvar la comida o la cena.</p>
+                                    <a href="#" class="btn btn-primary btn-lg btn-verde">Ver receta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 my-1 mt-4 text-center">
+            <div class="col-lg-6 mx-auto">
+                <h2 class="display-5 fw-bold text-body-emphasis texto-destacado mb-4">¿Te gusta lo que ves?</h2>
+
+                <div class="m-3">
+                    <form action="" method="get">
+                        <input type="email" id="email-newsletter" name="email-newsletter"
+                            placeholder="Introduce tu correo...">
+                    </form>
+                </div>
+
+                <a href="#!" class="btn btn-primary btn-lg btn-naranja">Suscríbete a la newsletter</a>
+
+                <ul id="lista-destacada">
+                    <li>Item 0</li>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- AQUÍ VA EL PIE DE PÁGINA DE LA WEB -->
+    <footer class="mt-5">
+        <div>
+            <p>
+                2024 Cocinillas. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const TIPODISPOSITIVO = "PC"; // Constante, no se modifica
+        let nombrePersona = "DESCONOCIDO"; // variable que se puede modificar en el código
+
+        // Tipos de variables
+        let apellidosPersona = "Perez Lopez"; // Variable tipo texto
+        let edadPersona = 25; // Variable de tipo número
+        let esMayorDeEdad = true; // Variable boolean, tipo true/false
+        let recetasFavoritas = null; // Inicializamos la variable a null
+        let ingredientesUtilizados; // Variable undefined (porque no la hemos inicializado con ningun valor, ni siquiera NULL)
+
+        console.log("Nombre de la persona antes de llamar al servidor: " + nombrePersona);
+
+
+        // código que recupera el nombre del servidor...
+        nombrePersona = "Maria";
+        console.log("Nombre después de llamar al servidor: " + nombrePersona);
+
+
+        edadPersona = edadPersona + 5;
+        /*
+        ALERT POR SEPARADO
+        alert(nombrePersona);
+        alert(TIPODISPOSITIVO);
+        alert(edadPersona);*/
+
+        // María, PC (Edad: 25)
+        console.log("Nombre antes de inicializar el mensajeAMostrar: " + nombrePersona);
+        let mensajeAMostrar = nombrePersona + ", " + TIPODISPOSITIVO + " (Edad: " + edadPersona + ")";
+        console.log("Nombre despues de inicializar el mensajeAMostrar: " + nombrePersona);
+
+        //alert(mensajeAMostrar);
+        console.log(mensajeAMostrar);
+
+        // COMPARADORES Y CONDICIONES
+        // 1. comprara que una variable sea igual (==)
+        if (nombrePersona == "Maria") {
+            // alert("Hola María!");
+        }
+
+        // 2. IF ELSE (Sí/No)
+        if (nombrePersona == "Maria") {
+            // alert("Hola María!");
+        } else {
+            // alert("Vaya, no sabemos tu nombre...");
+        }
+
+        // 3. Comparador de "si es distinto que" (!=)
+        nombrePersona = "DESCONOCIDO";
+
+        if (nombrePersona != "DESCONOCIDO") {
+            // alert("Hola " + nombrePersona + "!");
+        } else {
+            // alert("Vaya, no sabemos tu nombre...");
+        }
+
+        // 4. Comparador de "si es mayo que" (>) // Si es menor (<)
+        if (edadPersona > 18) {
+            // ¡Genial! María es mayor de edad, puedes continuar.
+            // alert("¡Genial! " + nombrePersona + " es mayor de edad, puedes continuar.");
+        } else {
+            //  alert("Vaya, no eres mayor de edad, no puedes usar esta web.");
+        }
+
+        // ESTO ES LO MISMO QUE ARRIBA, SOLO QUE LE HEMOS DADO LA VUELTA PARA USAR EL "<" (menor qué)
+        if (edadPersona < 18) {
+            // ¡Genial! María es mayor de edad, puedes continuar.
+            // alert("Vaya, no eres mayor de edad, no puedes usar esta web.");
+        } else {
+            // alert("¡Genial! " + nombrePersona + " es mayor de edad, puedes continuar.");
+        }
+
+        // OPERADORES LOGICOS
+
+        // 5. Comprador de si edad es mayor que 18 y si el nombre no es desconocido. ( && ) [para un Y]
+        if (nombrePersona != "DESCONOCIDO" && edadPersona > 18) {
+            // alert("Puedes acceder al contenido de usuario registrado mayor de edad");
+        } else {
+            // alert("VAYA, NO HEMOS PODIDO RECUPERAR EL USUARIO O NO ERES MAYOR DE EDAD.");
+        }
+
+        // 6. Comparador de si edad es mayor que 18 o si recetas es distinto que null
+        if (edadPersona > 18 || recetasFavoritas != null) {
+            // alert("Eres mayor de edad o tienes recetasFavoritas creadas.");
+
+            esMayorDeEdad = true;
+            console.log("Es mayor de edad.");
+        } else {
+            // alert("Ni eres mayor de edad ni tienes recetasFavoritas.");
+        }
+
+        // 7. Operador lógico de NEGACIÓN.
+        if (esMayorDeEdad) { // Lo mismo que si pone if(esMayorDeEdad == true)
+            //  alert("Eres mayor de edad, ¡enhorabuena!");
+        } else {
+            // alert("Vaya, no eres mayor de edad...");
+        }
+        if (!esMayorDeEdad) { // Lo mismo que si pone if(esMayorDeEdad == false)
+            //  alert("Vaya, no eres mayor de edad...");
+        } else {
+            //  alert("Eres mayor de edad, ¡enhorabuena!");
+        }
+
+        // Ejemplo más complejo con negación
+        // Si el nombre es distinto que DESCONOCIDO y edad es mayor que 25 y el tipo dispositivo no es PC
+        if ((nombrePersona != "DESCONOCIDO" && edadPersona > 25) || !(TIPODISPOSITIVO == "PC")) {
+            console.log("Entra en nuestro IF complejo.");
+        }
+
+        if ((true && false) || !true) {
+
+        }
+
+        if (false || false) {
+
+        }
+
+        // Ejemplo más complejo con negación
+        // Si el nombre es distinto que DESCONOCIDO y edad es mayor que 25 y el tipo dispositivo no es PC
+        let nombreYEdadOK = nombrePersona != "DESCONOCIDO" && edadPersona > 25;
+
+        if (nombreYEdadOK || !(TIPODISPOSITIVO == "PC")) {
+            console.log("Entra en nuestro IF complejo.");
+        }
+
+        if ((true && false) || !true) {
+
+        }
+
+        if (false || false) {
+
+        }
+
+        // EJEMPLO ELSE IF
+        if (edadPersona > 50) {
+            // alert("TIenes más de 50 años.");
+        } else {
+            // alert("TIenes menos de 50 años.");
+        }
+
+        edadPersona = 10;
+
+        if (edadPersona > 50) {
+            // alert("Tienes más de 50 años.");
+        } else if (edadPersona > 30) {
+            // alert("Tienes más de 30 años pero menos de 50.");
+        } else if (edadPersona > 20) {
+            // alert("Tienes más de 20 años pero menos de 30.");
+        } else if (edadPersona > 10) {
+            // alert("Tienes más de 10 años pero menos de 20.");
+        } else {
+            // alert("Tienes menos de 10 años.");
+        }
+
+
+    </script>
+
+    <script>
+        // BUCLES EN JAVASCRIPT
+        console.log("--------------------------------------------------------");
+        console.log("--------------------------------------------------------");
+        console.log("EJERCICIO DE BUCLES");
+        console.log("");
+
+        // 1. WHILE numerico
+        let elementosPintados = 0;
+
+        while (elementosPintados < 10) {
+            console.log("ELementos pintados: " + (elementosPintados + 1));
+            elementosPintados = elementosPintados + 1;
+        }
+
+        console.log("HA TERMINADO EL BUCLE");
+        console.log("------------------------------------------------");
+
+        // 2. WHILE boolean (true/false)
+        let elementoEncontrado = false;
+        elementosPintados = 0;
+
+        while (elementoEncontrado == false) {
+            elementosPintados = elementosPintados + 1;
+            //Esto sería lo mismo: elementosPintados++;
+
+            if (elementosPintados == 7) {
+                elementoEncontrado = true;
+                console.log("ELEMENTO ENCONTRADO: " + elementosPintados);
+            }
+        }
+
+        console.log("HA TERMINADO EL BUCLE");
+        console.log("------------------------------------------------");
+
+        // 3. Bucle FOR
+        // No hace falta inicializar la variable fuera
+        for (let i = 0; i < 10; i++) {
+            // Aquí dentro hacemos el bucle
+            console.log("Elementos pintados: " + (i + 1));
+        }
+
+        /*
+        ESTO ES LO MISMO, PERO AL REVES, EMPEZANDO POR EL FINAL (10) Y LLEGANDO AL 0.
+        for(let i = 10; i > 0; i--) {
+
+        }*/
+
+        // i++ => i = i + 1;
+        //for(INCIALIZAMOS LA VARIABLE DEL CONTADOR; METEMOS LA COMPARACIÓN, INCREMENTO) {
+        //}
+
+        console.log("HA TERMINADO EL BUCLE");
+        console.log("------------------------------------------------");
+
+        // 3. Bucle FOR
+        // No hace falta inicializar la variable fuera
+        for (let i = 0; i < 10; i++) {
+            // Aquí dentro hacemos el bucle
+
+            if (i == 7) {
+                console.log("ELEMENTO ENCONTRADO: " + i);
+            }
+        }
+
+        console.log("HA TERMINADO EL BUCLE");
+        console.log("------------------------------------------------");
+
+    </script>
+
+    <script>
+        let correo = null;
+
+        correo = "correo@gmail.com";
+
+        console.log(correo);
+
+        if (correo != null) {
+            console.log("ENTRA");
+        }
+    </script>
+
+    <script>
+        const PLATAFORMA = "Mobile";
+
+        if (PLATAFORMA != "PC") {
+            document.getElementById("tituloRecetasCocina").innerHTML = "Recetas Cocina";
+        } else {
+            document.getElementById("tituloRecetasCocina").innerHTML = "Las mejores Recetas de Cocina";
+        }
+
+
+        let listaItems = "";
+
+        for (let i = 0; i < 20; i++) {
+            if (i != 11) {
+                listaItems = listaItems + "<li>" + "Ingrediente " + (i + 1) + "</li>";
+            } else {
+                listaItems = listaItems + "<li>" + "Ingrediente " + (i + 1) + " <strong>¡DESTACADO!</strong></li>";
+            }
+        }
+
+        document.getElementById("lista-destacada").innerHTML = listaItems;
+    </script>
+</body>
+
+</html>

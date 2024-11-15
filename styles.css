@@ -1,0 +1,211 @@
+/*
+
+PALETA DE COLORES:
+
+- Verde claro: 606C38
+- Verde oscuro: 283618
+- Tono Beige: FEFAE0
+- Marrón claro: DDA15E
+- Marrón oscuro: BC6C25
+
+*/
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  background-color: #283618;
+  text-align: center;
+  padding: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+footer p {
+  color: white;
+}
+
+.logotipo {
+  width: 40px;
+  height: auto;
+  margin-right: 12px;
+}
+
+header .enlace {
+  color: #283618;
+}
+
+header .active {
+  background-color: #dda15e !important;
+}
+
+/* ESTILO BOTONES */
+.btn-verde {
+  background-color: #606c38;
+  border: 1px solid #606c38;
+}
+
+.btn-verde:hover {
+  background-color: #7f8a5b;
+  border: 1px solid #7f8a5b;
+}
+
+.btn-verde:active {
+  background-color: #a7b185 !important;
+  border: 1px solid #a7b185 !important;
+  font-size: 22px;
+}
+
+.btn-naranja {
+  position: relative;
+  right: 0px;
+  background-color: #dda15e !important;
+  border: 1px solid #dda15e;
+  transition: right, border, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.btn-naranja:hover {
+  background-color: #c1833d !important;
+  border: 1px solid #c1833d;
+  right: -12px;
+  transition: right, border, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.btn-naranja:active {
+  background-color: #99672d !important;
+  border: 1px solid #99672d !important;
+}
+
+/* FIN DE LOS ESTILO BOTONES */
+
+.fondo-main {
+  background-image: url("fondo-receta-blanca.png");
+  background-size: cover;
+}
+
+.fondo-main h1 {
+  position: relative;
+  font-size: 56px;
+  top: -300px;
+  opacity: 0;
+  animation-name: difuminarArriba; /* el nombre de la animacion que usaremos en el keyframes*/
+  animation-duration: 1s; /* duración de la animación */
+  animation-timing-function: ease-out; /* la curva de velocidad de la animación */
+  animation-iteration-count: 1; /* cuantas veces queremos que lo repita */
+  animation-delay: 0.3s; /* retraso de la animación */
+  animation-fill-mode: forwards; /* Para que se quede en el estado final del 100%*/
+}
+
+@keyframes difuminarArriba {
+  0% {
+    top: -300px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.foto-feature {
+  padding-left: 0px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.foto-feature img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card-receta h5 {
+  font-size: 16px;
+}
+
+.card-receta p {
+  font-size: 13px;
+}
+
+.card-receta a {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 14px;
+}
+
+.foto-card-receta {
+  width: auto;
+  height: 100%;
+}
+
+.contenedor-foto {
+  overflow: hidden;
+  height: 240px;
+}
+
+.texto-destacado {
+  font-size: 32px;
+}
+
+#email-newsletter {
+  width: 400px;
+  height: 50px;
+  border: 1px solid #606c38;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #222;
+  text-align: center;
+}
+
+#email-newsletter:focus {
+  border: 3px solid #bc6c25 !important;
+  outline: none;
+}
+
+/*
+#lista-destacada li:first-child {
+  border: 2px solid #dda15e;
+}
+
+#lista-destacada li:last-child {
+  color: red;
+}
+
+#lista-destacada li:nth-child(3) {
+  background-color: #606c38;
+}*/
+
+#lista-destacada li:nth-child(odd) {
+  background-color: #d6e2af;
+}
+
+#lista-destacada li:nth-child(even) {
+  background-color: white;
+}
+
+.enlace-custom,
+.enlace-custom:visited {
+  color: #bc6c25;
+  font-weight: bold;
+}
+
+.enlace-custom:hover {
+  color: #d5935a;
+  font-weight: bold;
+}
